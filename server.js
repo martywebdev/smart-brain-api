@@ -1,10 +1,10 @@
 const express = require('express')
 const app = express()
-const cors = require('./config/cors.js');
+const cors = require('./src/config/cors.js');
 const morgan = require('morgan')
 const helmet = require('helmet')
-const limiter = require('./config/rateLimiter.js')
-const routes = require('./routes'); 
+const limiter = require('./src/config/rateLimiter.js')
+const routes = require('./src/routes'); 
 //MIDDLEWARES
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));

@@ -1,5 +1,5 @@
 const bcrypt = require('bcrypt');
-const db = require('../config/db');
+const db = require('../../config/db');
 const { createResponse } = require('../utils/responseUtil')
 
 const signIn = async (req, res) => {
